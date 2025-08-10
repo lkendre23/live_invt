@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>विवाह आमंत्रण</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Devanagari', sans-serif;
+      background: url('https://t4.ftcdn.net/jpg/10/23/89/07/360_F_1023890721_5XQcGLCZZZf6kfXPMnZBJrSbrj5f0LbY.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #4e342e;
+      padding: 20px;
+    }
+
+    .invitation-card {
+      background: rgba(255, 240, 245, 0.9);
+      border-radius: 25px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      max-width: 960px;
+      margin: auto;
+      border: 2px dashed #f06292;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #ad1457;
+      font-weight: bold;
+    }
+
+    .divider {
+      height: 3px;
+      background: linear-gradient(to right, #f06292, #ec407a, #f06292);
+      margin: 20px 0;
+      border-radius: 10px;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    .invitation-header img {
+      height: 100px;
+      animation: zoomIn 2s ease;
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .ganesh-img {
+      border-radius: 50%;
+      border: 5px solid #f48fb1;
+      box-shadow: 0 0 10px rgba(244, 143, 177, 0.6);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .section-title {
+      background: #f8bbd0;
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    .family-members {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .family-member {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    .female-name {
+      margin-right: 30px;
+    }
+
+    .separator {
+      margin: 0 20px;
+      font-weight: bold;
+      color: #ad1457;
+    }
+
+    .male-name {
+      margin-left: 30px;
+    }
+
+    .photos img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #f06292;
+      margin-bottom: 8px;
+      transition: transform 0.3s;
+    }
+
+    .photos img:hover {
+      transform: scale(1.1);
+    }
+
+    .footer-text {
+      font-size: 1.1rem;
+      margin-top: 25px;
+      color: #6d1b7b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="invitation-card text-center">
+
+    <!-- Header Ganesh Image -->
+    <div class="invitation-header mb-4">
+      <img src="https://development.ikf.in/testinglk/shree-ganesh.webp" alt="Ganesh" class="ganesh-img">
+    </div>    
+    <h1>॥ श्री गणेशाय नमः ॥</h1>  
+    <p class="mt-3">
+      वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। <br> निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा।।
+    </p>
+
+    <div class="divider"></div>
+
+    <!-- Bride & Groom -->
+    <div class="row  mb-4">
+      <div class="col-md-6">
+        <h3 class="section-title">वधू</h3>
+        <p>ची. सौ. का. गीता <br> श्री बालाजी रानबा केंद्रे <br> रा. टोकवाडी, ता. परळी वैजनाथ, जि. बीड<br />यांची कनिष्ठ कन्या</p>
+      </div>
+      <div class="col-md-6">
+        <h3 class="section-title">वर</h3>
+        <p>ची. आरुण <br> श्री मारोती मुञ्जाजी मुंडे <br> रा. टोकवाडी, ता. परळी वैजनाथ, जि. बीड<br />यांचे कनिष्ठ चिरंजीव</p>
+      </div>
+    </div>
+
+    <h2 class="my-3">शुभ विवाह</h2>
+
+    <p>
+      मित्ती श्रावण कृ. ६ शके १९४७ गुरुवार, <br>
+      दि. १४/८/२०२५ रोजी दु. १२.३५ वा.
+    </p>
+
+    <p>
+      विवाह... आयुष्यातील एक अविस्मरणीय क्षण असतो. निखळ प्रेम, सुंदर वाटचाल यासाठी आवश्यक. त्यातच आनंद द्विगुणित करण्यासाठी प्रत्येक गोष्ट आपल्याला मनापासून हवीच. अशा या सोहळ्याच्या साक्षींसाठी आपणास आग्रहाचे आमंत्रण करीत आहोत.
+    </p>
+
+    <div class="divider"></div>
+
+    <!-- Event Details -->
+    <h4 class="section-title">विवाहस्थळ</h4>
+    <a href="https://maps.app.goo.gl/SBNrvQSuhwct1rMw7" target="_blank" style="color: #d81b60; text-decoration: underline;">
+      <strong>Click Here</strong>
+    </a>
+    <p>श्री रत्नेश्वर मंदिर, टोकवाडी, ता. परळी वैजनाथ, जि. बीड</p>
+
+    <h4 class="section-title">हळदीचे देवकार्य</h4>
+    <p>बुधवार दि. १३/८/२०२५, स्थळ: राहते घर, टोकवाडी</p>
+
+    <h4 class="section-title">व्यवस्थापक</h4>
+    <p>समस्त गावकरी मंडळ, टोकवाडी</p>
+
+    <p><strong>स्नेहभोजन :</strong> लग्नानंतर लगेचच...</p>
+
+    <div class="divider"></div>
+
+    <!-- Family Details -->
+    <h4 class="section-title">आपले विनीत</h4>
+    <p>श्रीराम मुगाजी केंद्रे</p>
+
+    <p>वधू-वर विनंतीस मान देऊन मंगल कार्यास उपस्थित रहावे.</p>
+    <h5 class="section-title">कुटुंबातील मंडळी</h5>
+    <div class="text-start mt-4">
+      
+      <div class="family-members">
+        <div class="family-member">
+          <span class="female-name">सौ. यमुनाबाई</span>
+          <span class="separator">-</span>
+          <span class="female-name">बालाजी रानबा केंद्रे</span>
+        </div>
+        <div class="family-member">
+          <span class="female-name">सौ. रेणुकाबाई</span>
+          <span class="separator">-</span>
+          <span class="female-name">बळीराम रानबा केंद्रे</span>
+        </div>
+        <div class="family-member">
+          <span class="female-name">सौ. मंगलबाई </span>
+          <span class="separator">-</span>
+          <span class="female-name">पंढरी सीताराम केंद्रे</span>
+        </div>
+        <div class="family-member">
+          <span class="female-name">सौ. सुरेखा</span>
+          <span class="separator">-</span>
+          <span class="female-name">लिम्बाजी सीताराम केंद्रे</span>
+        </div>
+        <div class="family-member">
+          <span class="female-name">ग. भा. सुमनबाई</span>
+          <span class="separator">-</span>
+          <span class="female-name">शिवाजी केंद्रे</span>
+        </div>
+        <div class="family-member">
+          <span class="female-name">सौ. सविता</span>
+          <span class="separator">-</span>
+          <span class="female-name">पाटलोबा सीताराम केंद्रे.</span>
+        </div>
+        <div class="family-member">
+          <span class="female-name">सौ. रोहिणी</span>
+          <span class="separator">-</span>
+          <span class="female-name">लक्ष्मण बालाजी केंद्रे</span>
+        </div>
+        <div class="family-member">                   
+          <span class="female-name">चि. श्रीपाद, वल्लभ, कु. रिद्धी, कु. वैष्णवी व समस्त केंद्रे परिवार</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kids Section -->
+    <div class="photos row justify-content-center my-4">
+      <div class="col-4 col-md-3 text-center">
+        <img src="./riddhi.jpg" alt="कु. ऋद्धी">
+        <p>आत्याच्या लग्नाला यायचं हं! <br> कु. रिद्धी</p>
+      </div>
+      <div class="col-4 col-md-3 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="कु. शिवानी">
+        <p>मावशिच्या लग्नाला यायचं हं! <br> कु. शिवांगी</p>
+      </div>
+      <div class="col-4 col-md-3 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="चि. त्रिपाद">
+        <p>ताईच्या लग्नाला यायचं हं! <br> चि. श्रीपाद , वल्लभ, कु. वैष्णवी</p>
+      </div>
+    </div>
+
+    <p class="footer-text">तुमचं प्रेम आणि आशीर्वाद हेच आमचं खरं वैभव आहे.</p>
+
+   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
